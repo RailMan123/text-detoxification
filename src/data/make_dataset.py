@@ -36,7 +36,7 @@ test_data = {
 
 test_dataset = Dataset.from_dict(test_data)
 
-dataset = DatasetDict({"train":train_dataset, "validation":val_dataset, "test":test_dataset})
+dataset = DatasetDict({"train": train_dataset, "validation": val_dataset, "test": test_dataset})
 
 dataset_path = "../../data/interim/"
 dataset.save_to_disk(dataset_path)
