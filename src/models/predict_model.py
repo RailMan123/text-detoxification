@@ -24,6 +24,5 @@ def neutralize(model, inference_request, tokenizer=tokenizer):
 
 print("Enter a sentence you want to neutralize:")
 inp = input()
-inp = inp.strip().lower()
 inference_request = prefix + inp
 neutralize(model, inference_request, tokenizer)
